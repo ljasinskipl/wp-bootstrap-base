@@ -1,0 +1,603 @@
+/*
+Theme Name: LJPL Bootstrap Base Theme
+Theme URI: http://www.ljasinski.pl
+Author: Studio Multimedialne ljasinski.pl
+Author URI: http://www.ljasinski.pl/blog
+Description: Just a solid base. Theme made for developing child themes faster
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic&subset=latin,latin-ext);
+
+@font-face {
+	font-family: 'Calluna';
+	src: url('fonts/Calluna-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'CallunaSans';
+	src: url('fonts/CallunaSansRegular.ttf');
+}
+
+body {
+	font-family: CallunaSans;
+	font-size:16px;
+}
+
+
+h1.article-title, h2.article-title {
+	font-family: Calluna;
+	font-size:30px;
+	text-transform:none;
+	letter-spacing:0.05em;
+	margin-top:0;
+}
+
+.article-title a {
+	color:#333333;
+}
+
+article {
+	padding: 20px;
+	position:relative;
+	margin-top:20px;
+}
+
+article .widget {
+	border: 1px solid #ddd;
+	width:300px;
+	max-width:300px;
+	width:auto;
+	padding:10px;
+	
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	-o-border-radius:15px;
+}
+
+article .widget h2 {
+	margin-top:0;
+}
+
+article h1, article h2, article h3, article h4, article  h5, article h6 {
+	font-weight:normal;
+	text-transform:uppercase;
+	font-family:'Open Sans Condensed';
+	letter-spacing:0.01em;
+	margin-top:1em;
+	margin-bottom:0.4em;
+}
+
+article.excerpt-aside p.meta {
+	font-size:0.9em;
+	color:#999;
+	line-height:0.8em;
+}
+
+article.excerpt-aside div.content {
+	font-size:1.4em;
+	font-style:italic;
+	color:#333333;
+	line-height:1.4em;
+}
+article.excerpt-aside div.content p:last-child {
+	margin-bottom:0;
+}
+
+.pagination li {
+	font-family:'Open Sans Condensed', serif;
+	font-weight:bold;
+	font-size:0.9em;
+	
+}
+
+blockquote:before, blockquote:after {
+color: #69c;
+display: block;
+font-size: 700%;
+width: 50px;
+
+}
+
+blockquote:before {
+	content: '\201C';
+	height: 0;
+	position:relative;
+	top:0.3em;
+	left:-0.4em;
+}
+
+blockquote {
+	padding-left:3em;
+}
+
+blockquote cite {
+	font-style:italic;
+}
+/* * * AUTHOR-INFO * * */
+
+#author-info .avatar {
+	float:left;
+	margin:0 15px;
+}
+
+/* * * FOOTER * * */
+
+footer#main-footer {
+	background-color:#eee;
+	width:auto;
+	padding:20px 20px 0 20px;
+	margin-top:3em;
+}
+
+#main-footer #copyright-info {
+	text-align:center;
+	font-size:0.85em;
+}
+/* * * IMAGES * * */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+.wp-caption{ position: relative; }
+.wp-caption-text{ background-color: rgba(0, 0, 0, 0.8); bottom: 30px; color: #eee; left:0; padding: 3px 10px 3px 20px; position: absolute; }
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.gallery-item {
+	position:relative;
+}
+
+.blog article img.attachment-image-posttype {
+	max-width:100%;
+}
+
+.excerpt-image .overlay {
+	position:absolute;
+	bottom:30px;
+	background-color:white;
+	background-color:rgba(255,255,255,0.6);
+	padding: 0 30px;
+	width:75%;
+}
+/* * * * * COMMENTS  * * * * */
+
+.comments-template textarea {
+	width:500px;
+	padding:15px;
+}
+
+.comments-template #submit {
+	display: inline-block;
+	padding: 4px 14px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid #BBB;
+	border-bottom-color: #A2A2A2;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #006DCC;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08C), to(#04C));
+	background-image: -webkit-linear-gradient(top, #08C, #04C);
+	background-image: -o-linear-gradient(top, #08C, #04C);
+	background-image: linear-gradient(to bottom, #08C, #04C);
+	background-image: -moz-linear-gradient(top, #08C, #04C);
+	background-repeat: repeat-x;
+	border-color: #04C #04C #002A80;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.comments-template, .comments-template blockquote, .comments-template blockquote p {
+	font-size:14px;
+}
+
+.comments-template ul li{
+	padding-top:10px;
+	list-style-type:none;
+	position:relative;
+    clear: both;
+}
+
+.children{
+	margin-left:40px;
+}
+	
+.comment-meta {
+	width:120px;
+	float:left;
+	font-size:12px;
+	clear:left;
+	vertical-align:middle;
+}
+
+.comment-meta .avatar {
+	margin: 0 auto;
+}
+.comment-body {
+	margin-left: 120px;
+	height:auto;
+	vertical-align:middle;
+}
+
+/* * * * * WIDGETY * * * * */
+
+
+
+/* kalendarz */
+
+#wp-calendar {
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  *border-collapse: collapse;
+  border-left: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  width:95%;
+  margin: 0 auto;
+  empty-cells: show;
+}
+#wp-calendar th,
+#wp-calendar td {
+  border-left: 1px solid #dddddd;
+  text-align:center;
+  padding: 8px;
+  line-height: 20px;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;  
+}
+#wp-calendar td {
+	font-family: 'Open Sans Condensed';
+	font-weight: bold;
+	font-size:0.9em;
+}
+#wp-calendar caption + thead tr:first-child th,
+#wp-calendar caption + tbody tr:first-child th,
+#wp-calendar caption + tbody tr:first-child td,
+#wp-calendar colgroup + thead tr:first-child th,
+#wp-calendar colgroup + tbody tr:first-child th,
+#wp-calendar colgroup + tbody tr:first-child td,
+#wp-calendar thead:first-child tr:first-child th,
+#wp-calendar tbody:first-child tr:first-child th,
+#wp-calendar tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+#wp-calendar thead:first-child tr:first-child th:first-child,
+#wp-calendar tbody:first-child tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+#wp-calendar thead:first-child tr:first-child th:last-child,
+#wp-calendar tbody:first-child tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+#wp-calendar thead:last-child tr:last-child th:first-child,
+#wp-calendar tbody:last-child tr:last-child td:first-child,
+#wp-calendar tfoot:last-child tr:last-child td:first-child {
+  -webkit-border-radius: 0 0 0 4px;
+  -moz-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+#wp-calendar thead:last-child tr:last-child th:last-child,
+#wp-calendar tbody:last-child tr:last-child td:last-child,
+#wp-calendar tfoot:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+#wp-calendar caption + thead tr:first-child th:first-child,
+#wp-calendar caption + tbody tr:first-child td:first-child,
+#wp-calendar colgroup + thead tr:first-child th:first-child,
+#wp-calendar colgroup + tbody tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+#wp-calendar caption + thead tr:first-child th:last-child,
+#wp-calendar caption + tbody tr:first-child td:last-child,
+#wp-calendar colgroup + thead tr:first-child th:last-child,
+#wp-calendar colgroup + tbody tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.gallery .gallery-icon {
+	width:auto;
+	max-width:250px;
+	padding:10px;
+	margin-left:20px;
+}
+
+.gallery .gallery-icon img {
+	width:100%;
+}
+
+.gallery a {
+	max-width: 250px;
+	width:auto;
+	overflow:hidden;
+	display:block;
+	margin:0 auto;
+}
+.gallery a:hover {
+	text-decoration:none;
+}
+
+.gallery a:after {
+	content: attr(title);
+
+	color:#333;
+	font-size:0.85em;
+	font-family: 'Kaushan Script', cursive;
+	text-decoration:none;
+}
+
+.gallery dt {
+	background-color:white;
+	max-width:270px;
+	max-height:290px;
+	width:auto;
+	padding:0;
+	padding-top:10px;
+	margin:0 auto;
+	border: 1px solid #ccc;
+	box-shadow: 0px 4px 6px #333;
+	-moz-box-shadow: 0px 4px 6px #333;
+	-webkit-box-shadow: 0px 4px 6px #333;
+}
+/* By default, we tilt all our images -2 degrees */
+.gallery dt {
+-webkit-transform: rotate(-2deg);
+-moz-transform: rotate(-2deg);
+
+}
+ 
+/* Rotate all even images 2 degrees */
+.gallery dl:nth-child(even)  dt  {
+-webkit-transform: rotate(2deg);
+-moz-transform: rotate(2deg);
+}
+ 
+/* Don't rotate every third image, but offset its position */
+.gallery dl:nth-child(3n) dt  {
+-webkit-transform: none;
+-moz-transform: none;
+position: relative;
+top: -5px;
+}
+ 
+/* Rotate every fifth image by 5 degrees and offset it */
+.gallery dl:nth-child(5n) dt {
+-webkit-transform: rotate(5deg);
+-moz-transform: rotate(5deg);
+position: relative;
+right: 5px;
+}
+ 
+/* Keep default rotate for every eighth, but offset it */
+.gallery dl:nth-child(8n) dt {
+position: relative;
+top: 8px;
+right: 5px;
+}
+ 
+/* Keep default rotate for every eleventh, but offset it */
+.gallery dl:nth-child(11n) dt{
+position: relative;
+top: 3px;
+left: -5px;
+}
+
+.gallery dd.wp-caption-text {
+	position:static;
+	background:none;
+	font-size:0.8em;
+	color:#333;
+	margin-top:0;
+	margin-left:50px;
+
+	background:#fefabc; 
+	padding:15px; 
+	font-family: 'Kaushan Script', cursive; 
+	font-size:11px; 
+	color: #000; 
+	width:100px; 
+	height:auto!important;
+	bottom:auto;
+	
+	
+	z-index:2;
+	
+	background: rgb(255,255,136); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(255,255,136,1) 77%, rgba(255,255,214,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(77%,rgba(255,255,136,1)), color-stop(100%,rgba(255,255,214,1))); /*Chrome,Safari4+*/
+	background: -webkit-linear-gradient(-45deg, rgba(255,255,136,1) 77%,rgba(255,255,214,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, rgba(255,255,136,1) 77%,rgba(255,255,214,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, rgba(255,255,136,1) 77%,rgba(255,255,214,1) 100%); /* IE10+ */
+	background: linear-gradient(-45deg, rgba(255,255,136,1) 77%,rgba(255,255,214,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffff88',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	-moz-transform: rotate(-7deg);
+	-webkit-transform: rotate(-7deg);
+	-o-transform: rotate(-7deg);
+	-ms-transform: rotate(-7deg);
+	transform: rotate(-7deg);
+
+	box-shadow: 0px 4px 6px #333;
+	-moz-box-shadow: 0px 4px 6px #333;
+	-webkit-box-shadow: 0px 4px 6px #333;
+	
+	border-bottom-right-radius: 60px 5px;
+}
+
+/* * * * * NAVI */
+
+.nav-tabs li {
+	position:relative;
+}
+
+.nav-tabs .caret {
+	position:absolute;
+	top:9px;
+	right:7px;
+	margin:0;
+
+	border-top: 5px solid black;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent
+}
+
+ul.nav li.dropdown:hover ul.dropdown-menu{
+    display: block;    
+}
+
+ul.dropdown-menu {
+	margin-top:0;
+}
+
+li.dropdown a {
+	padding-right:20px!important;
+}
+
+.nav-tabs {
+	margin-bottom:-1px!important;
+}
+
+.nav-tabs > .current_page_item  > a, .nav-tabs > .current_page_item > a:hover {
+color: #555;
+cursor: default;
+background-color: white;
+border: 1px solid #DDD;
+border-bottom-color: transparent;
+}
+
+/* KEYS **** */
+kbd, .key {
+	display: inline;
+	display: inline-block;
+	min-width: 1em;
+	padding: .2em .3em;
+	font: normal .85em/1 "Lucida Grande", Lucida, Arial, sans-serif;
+	text-align: center;
+	text-decoration: none;
+	-moz-border-radius: .3em;
+	-webkit-border-radius: .3em;
+	border-radius: .3em;
+	border: none;
+	cursor: default;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+kbd[title], .key[title] {
+	cursor: help;
+}
+
+/* Dark style for display on light background. This is the default style. */
+kbd, kbd.dark, .dark-keys kbd, .key, .key.dark, .dark-keys .key {
+	background: rgb(80, 80, 80);
+	background: -moz-linear-gradient(top, rgb(60, 60, 60), rgb(80, 80, 80));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(60, 60, 60)), to(rgb(80, 80, 80)));
+	color: rgb(250, 250, 250);
+	text-shadow: -1px -1px 0 rgb(70, 70, 70);
+	-moz-box-shadow: inset 0 0 1px rgb(150, 150, 150), inset 0 -.05em .4em rgb(80, 80, 80), 0 .1em 0 rgb(30, 30, 30), 0 .1em .1em rgba(0, 0, 0, .3);
+	-webkit-box-shadow: inset 0 0 1px rgb(150, 150, 150), inset 0 -.05em .4em rgb(80, 80, 80), 0 .1em 0 rgb(30, 30, 30), 0 .1em .1em rgba(0, 0, 0, .3);
+	box-shadow: inset 0 0 1px rgb(150, 150, 150), inset 0 -.05em .4em rgb(80, 80, 80), 0 .1em 0 rgb(30, 30, 30), 0 .1em .1em rgba(0, 0, 0, .3);
+}
+
+/* Light style for display on dark background. */
+kbd.light, .light-keys kbd, .key.light, .light-keys .key {
+	background: rgb(250, 250, 250);
+	background: -moz-linear-gradient(top, rgb(210, 210, 210), rgb(255, 255, 255));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(210, 210, 210)), to(rgb(255, 255, 255)));
+	color:  rgb(50, 50, 50);
+	text-shadow: 0 0 2px rgb(255, 255, 255);
+	-moz-box-shadow: inset 0 0 1px rgb(255, 255, 255), inset 0 0 .4em rgb(200, 200, 200), 0 .1em 0 rgb(130, 130, 130), 0 .11em 0 rgba(0, 0, 0, .4), 0 .1em .11em rgba(0, 0, 0, .9);
+	-webkit-box-shadow: inset 0 0 1px rgb(255, 255, 255), inset 0 0 .4em rgb(200, 200, 200), 0 .1em 0 rgb(130, 130, 130), 0 .11em 0 rgba(0, 0, 0, .4), 0 .1em .11em rgba(0, 0, 0, .9);
+	box-shadow: inset 0 0 1px rgb(255, 255, 255), inset 0 0 .4em rgb(200, 200, 200), 0 .1em 0 rgb(130, 130, 130), 0 .11em 0 rgba(0, 0, 0, .4), 0 .1em .11em rgba(0, 0, 0, .9);
+}
+

@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic&subset=latin,latin-ext);
+
+@font-face {
+	font-family: 'Calluna';
+	src: url('fonts/Calluna-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'CallunaSans';
+	src: url('fonts/CallunaSansRegular.ttf');
+}
+
+img {
+	width:auto;
+	height:auto;
+	max-width:100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-weight: normal;
+text-transform: uppercase;
+font-family: 'Open Sans Condensed';
+letter-spacing: 0.01em;
+margin-top: 1em;
+margin-bottom: 0.4em;
+}
+
+h1 {
+font-size: 36px;
+line-height: 40px;
+}
+h2 {
+font-size: 30px;
+line-height: 40px;
+}
+h3 {
+font-size: 24px;
+line-height: 40px;
+}
+h4 {
+font-size: 18px;
+line-height: 20px;
+}
+h5 {
+font-size: 14px;
+line-height: 20px;
+}
+h6 {
+font-size: 12px;
+line-height: 20px;
+}
