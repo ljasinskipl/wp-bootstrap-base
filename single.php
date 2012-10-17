@@ -27,7 +27,7 @@
 									'echo'             => 1 ) ); ?> 
 								
 								<hr />								
-								<?php get_template_part( 'part-author', $posts[0]->post_author ); ?>
+								<?php get_template_part( 'authorinfo', $posts[0]->post_author ); ?>
 								<hr />
 								<?php comments_template(); ?>
 								
