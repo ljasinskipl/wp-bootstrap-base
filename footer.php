@@ -21,7 +21,7 @@
 					</div>
 				</div>
 			</footer>
-		<script src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
+		
 		<?php wp_footer();?>
 	</body>
 </html>

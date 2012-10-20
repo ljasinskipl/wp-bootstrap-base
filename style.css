@@ -21,10 +21,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	src: url('fonts/CallunaSansRegular.ttf');
 }
 
-body {
-	font-family: CallunaSans;
-	font-size:16px;
-}
+
 
 
 h1.article-title, h2.article-title {
@@ -45,21 +42,8 @@ article {
 	margin-top:20px;
 }
 
-article .widget {
-	border: 1px solid #ddd;
-	width:300px;
-	max-width:300px;
-	width:auto;
-	padding:10px;
-	
-	border-radius:15px;
-	-moz-border-radius:15px;
-	-webkit-border-radius:15px;
-	-o-border-radius:15px;
-}
-
-article .widget h2 {
-	margin-top:0;
+#main-container {
+	margin-top:10px;
 }
 
 article h1, article h2, article h3, article h4, article  h5, article h6 {
@@ -298,6 +282,31 @@ a img.aligncenter {
 
 /* * * * * WIDGETY * * * * */
 
+#sidebar .widget {
+	border: 1px solid #ddd;
+	width:300px;
+	max-width:300px;
+	width:auto;
+	padding:10px;
+	
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	-o-border-radius:15px;
+	
+	margin-bottom:15px;
+}
+
+#sidebar .widget h2 {
+	
+	font-weight: normal;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed';
+	letter-spacing: 0.01em;
+	margin-top:0;
+	margin-bottom: 0.4em;
+}
+
 
 
 /* kalendarz */
@@ -522,7 +531,7 @@ left: -5px;
 
 .nav-tabs .caret {
 	position:absolute;
-	top:9px;
+	top:17px;
 	right:7px;
 	margin:0;
 
@@ -540,11 +549,11 @@ ul.dropdown-menu {
 }
 
 li.dropdown a {
-	padding-right:20px!important;
+	padding-right:20px;
 }
 
 .nav-tabs {
-	margin-bottom:-1px!important;
+	margin-bottom:-1px;
 }
 
 .nav-tabs > .current_page_item  > a, .nav-tabs > .current_page_item > a:hover {

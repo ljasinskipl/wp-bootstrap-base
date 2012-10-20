@@ -21,18 +21,24 @@ function ljpl_bootstrap_styles() {
 	// -- main CSS files
     wp_register_style( 'ljpl-bootstrap-min', get_bloginfo('template_directory') . '/css/bootstrap.min.css' );
     wp_register_style( 'ljpl-bootstrap-responsive', get_bloginfo('template_directory') . '/css/bootstrap-responsive.css' );
-	// wp_register_style( 'ljpl-bootstrap-main', get_bloginfo('stylesheet_url') . '/style.css' );
+	wp_register_style( 'ljpl-bootstrap-main', get_bloginfo('stylesheet_url') );
 
 	wp_enqueue_style( 'ljpl-bootstrap-min' );
 	wp_enqueue_style( 'ljpl-bootstrap-responsive' );
-	// wp_enqueue_style( 'ljpl-bootstrap-main' );
+	wp_enqueue_style( 'ljpl-bootstrap-main' );
 		
-	// -- jQuery - one script to rule them all
+	// -- jQuery - one script to rule them alL	
     wp_enqueue_script( 'jquery' );
+    
+    wp_enqueue_script( 'bootstrap-js', get_bloginfo('template_directory') . '/js/bootstrap.js', null, '', true);
+    wp_enqueue_script( 'jlpl-bootstrap-js', get_bloginfo('template_directory') . '/js/ljpl-bootstrap.js', '', true);
 	
 	// -- gravatar hovercards
 	// TODO: FIX
 	wp_enqueue_script( 'gprofiles', 'http://s.gravatar.com/js/gprofiles.js', array( 'jquery' ), 'e', true );
+	
+	wp_deregister_script( 'prototype' );
+	//wp_deregister_script( 'scriptacalous' );
 }
 
 /*******************************************************************************
@@ -74,7 +80,22 @@ add_theme_support( 'post-thumbnails' );
 // -- custom sizes
 add_image_size( 'gallery-thumb', 250, 250, true ); // thumbnails for gallery shortcode
 add_image_size( 'image-posttype', 870, 300, true ); // featured image for 'image' post format
- 
+
+add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10, 3 );
+
+function remove_thumbnail_dimensions( $html, $post_id, $post_image_id ) {
+    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+    return $html;
+}
+
+
+/*******************************************************************************
+ *
+ * Featured image sizes
+ * 
+ ******************************************************************************/
+
+include( get_template_directory() . '/includes/ljpl-shortcode-accordion.php' );
 
 add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ) );
 // This theme styles the visual editor with editor-style.css to match the theme style.
