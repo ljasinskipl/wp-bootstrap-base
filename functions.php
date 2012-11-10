@@ -38,7 +38,7 @@ function ljpl_bootstrap_styles() {
 	wp_enqueue_script( 'gprofiles', 'http://s.gravatar.com/js/gprofiles.js', array( 'jquery' ), 'e', true );
 	
 	wp_deregister_script( 'prototype' );
-	//wp_deregister_script( 'scriptacalous' );
+	wp_deregister_script( 'scriptacalous' );
 }
 
 /*******************************************************************************

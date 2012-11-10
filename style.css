@@ -77,6 +77,9 @@ article.excerpt-aside div.content p:last-child {
 	font-size:0.9em;
 	
 }
+.twitter-tweet-rendered blockquote:before,twitter-tweet-renderedblockquote:after {
+	display:none;
+}
 
 blockquote:before, blockquote:after {
 color: #69c;
